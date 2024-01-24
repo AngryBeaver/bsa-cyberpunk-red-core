@@ -4,6 +4,7 @@ import CPRChat from "../../../systems/cyberpunk-red-core/modules/chat/cpr-chat.j
 export class CyberpunkRedCore implements SystemApi {
 
     skillList:SkillConfig[] = [];
+    _currencyComponent:Component;
 
     get version() {
         return 2;
@@ -90,12 +91,25 @@ export class CyberpunkRedCore implements SystemApi {
         })
     }
 
+    get currencyComponent():Component{
+        if(!this._currencyComponent){
+            this._currencyComponent = beaversSystemInterface.componentCreate(
+                {
+                    type:"Currency",
+                    name:"Eurobucks",
+                    img:'modules/bsa-cyberpunk-red-core/icons/money-stack.svg'
+                });
+        }
+        return this._currencyComponent;
+    }
+
     get configCurrencies():CurrencyConfig[] {
         return [
             {
                 id: "wealth",
                 factor: 1,
                 label: "Eurobucks",
+                component:this.currencyComponent,
             }
         ]
     }
