@@ -66,6 +66,8 @@ export class CyberpunkRedCore implements SystemApi {
     }
 
     itemSheetReplaceContent(app, html, element):void {
+        let value = html.find('.item-details-name').text().trim();
+        html.find('.item-details-name').html(`<input name="name" type="text" value='${value}'>`);
         html.find('.item-bottom-tabs-section').remove();
         const sheetBody = html.find('.item-bottom-content-section');
         sheetBody.addClass("flexrow");

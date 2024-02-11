@@ -2,7 +2,7 @@
     "title": "Beaver's System Adaption cyberpunk-red-core",
     "description": "Cyberpunk-red-core implementation for Beaver's System Interface",
     "id": "bsa-cyberpunk-red-core",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "authors": [
       {
         "name": "angryBeaver",
