@@ -1,11 +1,9 @@
 {
 	"name": "bsa-cyberpunk-red-core",
 	"title": "Beaver's System Adaption cyberpunk-red-core",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Beaver's System Adaption cyberpunk-red-core",
-	"#devDir": "D:\\Vtts\\v10\\Data\\modules",
-	"#devDir": "D:\\Vtts\\v11\\Data\\modules",
-	"devDir": "D:\\Vtts\\v11.315\\Data\\modules",
+	"devDir": "C:\\vtts\\v11.315\\Data\\modules",
 	"main": "src/main.js",
 	"files": [
 		"src/types.ts"

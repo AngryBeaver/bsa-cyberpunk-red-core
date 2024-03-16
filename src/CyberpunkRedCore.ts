@@ -17,8 +17,9 @@ export class CyberpunkRedCore implements SystemApi {
 
     async actorRollSkill(actor, skillId){
         const pack = game["packs"].get("cyberpunk-red-core.internal_skills");
-        const item = await pack.getDocument(skillId);
-        if(!item){
+        const packItem = await pack.getDocument(skillId);
+        const item = actor.items.filter(i=>i.type === "skill" && packItem?.name===i.name)[0];
+        if(!item || !packItem){
             ui.notifications?.warn("I do not know skill "+skillId);
             return null;
         }
