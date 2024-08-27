@@ -4,6 +4,7 @@
 	"version": "1.0.3",
 	"description": "Beaver's System Adaption cyberpunk-red-core",
 	"devDir": "C:\\vtts\\v11.315\\Data\\modules",
+	"#devDir": "c:\\vtts\\v12.323\\Data\\modules",
 	"main": "src/main.js",
 	"files": [
 		"src/types.ts"
@@ -27,7 +28,7 @@
 		"printWidth": 120
 	},
 	"devDependencies": {
-		"beavers-system-interface": "^2.1.1",
+		"beavers-system-interface": "^2.2.0",
 		"@ethaks/fvtt-quench": "^0.6.0",
 		"@league-of-foundry-developers/foundry-vtt-types": "^0.8.8-9",
 		"@types/jest": "^27.4.1",

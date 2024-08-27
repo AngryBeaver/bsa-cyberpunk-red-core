@@ -1,3 +1,5 @@
+# 1.1.0
+- add modular SkillTest and AbilityTest
 # 1.0.3
 - fix skill bonus
 # 1.0.2
