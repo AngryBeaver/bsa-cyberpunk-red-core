@@ -8,10 +8,13 @@ link to module
 ````
 https://github.com/AngryBeaver/bsa-cyberpunk-red-core/releases/latest/download/module.json
 ````
-[system-interface](https://github.com/AngryBeaver/beavers-system-interface)
+## What is this
+This module provides system specifc implementation so that other modules can be written system independent
+when implementing against [beavers-system-interface](https://github.com/AngryBeaver/beavers-system-interface).
 
-[example module](https://github.com/AngryBeaver/beavers-crafting)
+### Example
+[beavers-crafting](https://github.com/AngryBeaver/beavers-crafting)
 
-# CC BY 3.0
+## CC BY 3.0
 Money stack icon by Delapouite under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)
 Originated: https://game-icons.net/1x1/delapouite/money-stack.html
