@@ -1,3 +1,5 @@
+# 1.2.1
+- fix a bug with active tab thx to "ItellStorys" for reporting this
 # 1.2.0
 - add color scheme to match system
 # 1.1.0

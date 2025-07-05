@@ -64,6 +64,10 @@ export class CyberpunkRedCore implements SystemApi {
         const tabContent = $('<div class="tab flexcol" style="width:inherit" data-group="primary" data-tab="' + tabData.id + '"></div>');
         body.append(tabContent);
         tabContent.append(tabBody);
+
+        $(html).find('nav.navtabs-right[data-group="primary"] [data-tab]').on("click",e => {
+            sheet.activeTab = e.currentTarget.dataset.tab;
+        });
     }
 
     itemSheetReplaceContent(app, html, element):void {
